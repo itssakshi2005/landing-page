@@ -1,0 +1,305 @@
+*{
+    margin: --0;
+    padding: --0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+:root{
+    --bg-color:#fff;
+    --main-color:#ee5574;
+    --text-color:#010101;
+    --2nd-color:#434343;
+    --other-color:#666666;
+    --big-font:3rem;
+    --h2-font:1.9rem;
+    --p-font:1.3rem;
+
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    box-shadow: 0 1px 6px 0 rgb(32,33,3.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+
+}
+.navbar a{
+    font-size: 1.2rem;
+    margin-left: 3rem;
+    color: var(--text-color);
+    transition: .3s;
+}
+.logo span{
+    color:var(--main-color);
+}
+.navbar a:hover{
+    color: var(--main-color);
+    border: 2px 3px 4px 2px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
+.icons i{
+    margin-left:1rem ;
+    color: #010101;
+    font-size: 20px;
+}
+.icons i:hover{
+    transform: translateY(-4px);
+    color: var(--main-color);
+}
+section{
+    width: 100%;
+}
+.home{
+    padding: 100px 90px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top:5%;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-txt h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: var(--big-font);
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.home-txt h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--2nd-color);
+    font-size: 2rem;
+}
+.home-txt p{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 20px;
+    margin-bottom: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn{
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: var(--bg-color);
+    background: var(--main-color);
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: .3s;
+}
+.btn:hover{
+    background-color:var(--other-color);
+    transition: 0.5s;;
+}
+
+.offers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 4rem;
+   
+}
+.offers-img img{
+    width: 350px;
+    display: block;
+    margin-left: 2rem;
+}
+.offers-img img:hover{
+    transform: scale(1.1);
+}
+
+.flowers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 4rem;
+    
+}
+.txt{
+    text-align: center;
+    font-size: var(--h2-font);
+    margin-top: 4rem;
+    color: #434343;
+}
+.row{
+    position: relative;
+    cursor: pointer;
+}
+.row img{
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+.row img:hover{
+    transform: scale(1.1);
+}
+.row h4{
+   
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    margin-left: 50px;
+    align-items: center;
+}
+.row h5{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    margin-left: 50px;
+   
+}
+
+
+.florist{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 4rem;
+}
+.container{
+    text-align: center;
+    font-size: var(--h2-font);
+    margin-top: 4rem;
+    color: #434343;
+}
+.box{
+    position: relative;
+    cursor: pointer;
+}
+.box img{
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+.box img:hover{
+    transform: scale(1.1);
+}
+.box h4{
+   
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    margin-left: 50px;
+    align-items: center;
+}
+.box h5{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    margin-left: 50px;
+   
+}
+.events{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    align-items: center;
+    
+    margin-top: 4rem;
+}
+.text{
+    text-align: center;
+    font-size: var(--h2-font);
+    margin-top: 4rem;
+    color: #434343;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 4rem;
+    background-color:#434343;
+}
+.contact-box h4{
+    margin-bottom:1.7rem;
+    font-size: 20px;
+    color: var(--bg-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 2rem;
+    
+}
+.contact-box li{
+    margin-bottom: 18px;
+    list-style-type: none;
+}
+.contact-box li a{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    font-weight: 500;
+    color: #999999;
+    margin-left: 2rem;
+}
+.contact-box li a:hover{
+    transform: translateX(-7px);
+    color: var(--main-color);
+}
+.contact-box h5{
+    color: #999999;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 2rem;
+}
+.social-media{
+    display: flex;
+    margin-top: 2rem;
+}
+.social-media i{
+    width: 20px;
+    height: 35px;
+    margin-left: 2rem;
+    font-size: 35px;
+    color: #999999;
+    border-radius:var(--main-color);
+}
+.social-media i:hover{
+    transform: translateY(-4px);
+    color: var(--main-color);
+}
+.copyright p{
+    text-align: center;
+}
